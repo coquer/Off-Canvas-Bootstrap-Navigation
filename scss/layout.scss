@@ -1,0 +1,120 @@
+@import "variables";
+
+body {
+	overflow-x: hidden;
+}
+
+@include include_heading();
+
+.navigation {
+	width: 100%;
+	height : 100%;
+	position: fixed;
+	z-index: 0;
+	@include total_position;
+	@include list_style;
+}
+.nav_item {
+
+	display: block;
+	width: 197px;
+	height: 54px;
+	line-height: 19px;
+	color:$font_color;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	margin: 0px -39px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	a{
+		font-size: 16px;
+		display:block;
+		padding:16px;
+		position:relative;
+		text-decoration: none;
+		color:$font_color;
+		text-transform: uppercase;
+		font-weight: 100;
+		letter-spacing: 2px;
+
+		@include get_gradiant();
+		@include get_animation();
+
+		&:hover{
+			box-shadow: 0px 0px 1px 8px rgba($bgk_color, 0.4);
+			@include get_gradiant(#404040,#404040);
+			@include get_animation();
+		}
+	}
+}	
+.col-nav-container-1 {
+	@include get_gradiant();
+	height:50px;
+	width:100%;
+	position:fixed;
+
+	h1{
+		font-size: 28px;
+		margin-left: 58px;
+		padding:2px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-top: 10px;
+		position:absolute;
+		font-family: monospace;
+	}
+}
+
+.nav-trigger {
+	position:absolute;
+	clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"]{
+	@include get_animation();
+	position:fixed;
+	left:20px;
+	top:11px;
+	z-index: 20;
+	height:30px;
+	width:30px;
+	cursor:pointer;
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+    background-size: contain;
+    outline: 0;
+    &:hover{
+    	@include image_scale();
+    	@include get_animation();
+    	outline:0;
+    }
+} 
+.navbar-form.navbar-right:last-child {
+	margin-right: 0px;
+}
+.site-wrap {
+	min-height: 700px;
+	min-width: 100%;
+	height:100%;
+	@include get_gradiant(#2B2B2B, #2B2B2B);
+	position: relative;
+	top: 0;
+	bottom: 100%;
+	left: 0;
+	z-index: 1;
+	padding: 0;
+	background-size: 200%;
+}
+
+.nav-trigger + label, .site-wrap {
+	transition: left 0.2s;
+}
+.nav-trigger:checked + label {
+	left: 215px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+  left: 200px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}

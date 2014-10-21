@@ -1,0 +1,136 @@
+$font_color : #ffffff;
+$bgk_color : #2B2B2B;
+$side_default: 1px;
+$border_default : #5EAEDA;
+$default_color : #222222;
+
+
+
+@mixin total_position() {
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+}
+
+@mixin list_style () {
+	list-style: none;
+	background: $bgk_color;
+}
+
+@mixin gen_border ($side, $size : $side_default, $color: $border_default, $alpha: 1){
+	$red: red($color);
+	$green: green($color);
+	$blue: blue($color);
+	@if ($side != ""){
+		border-#{$side}:$size solid rgba($red, $green, $blue, $alpha);
+	} 
+}
+
+@mixin placeholder-color($color){
+  &.placeholder{
+    color: $color
+  }
+
+  &:-moz-placeholder{
+    color: $color
+  }
+    
+  &::-webkit-input-placeholder{
+    color: $color
+  }
+
+  &:-ms-input-placeholder{
+    color: $color
+  }
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin clearfix() {
+  & {
+      *zoom: 1;
+  }
+  &:before,
+  &:after {
+      content: "";
+      display: table;
+  }
+  &:after {
+      clear: both;
+  }
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;
+}
+
+
+@mixin get_gradiant($from_color: $default_color, $to_color:$default_color){
+	
+	$from_red: red($from_color);
+	$from_green: green($from_color);
+	$from_blue: blue($from_color);
+
+	$to_red: red($to_color);
+	$to_green: green($to_color);
+	$to_blue: blue($to_color);
+	
+	background-color: $from_color;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb($from_red, $from_green, $from_blue)), to(rgb($to_red, $to_green, $to_blue)));
+	background-image: -webkit-linear-gradient(top, rgb($from_red, $from_green, $from_blue), rgb($to_red, $to_green, $to_blue));
+	background-image: -moz-linear-gradient(top, rgb($from_red, $from_green, $from_blue), rgb($to_red, $to_green, $to_blue));
+	background-image: -o-linear-gradient(top, rgb($from_red, $from_green, $from_blue), rgb($to_red, $to_green, $to_blue));
+	background-image: -ms-linear-gradient(top, rgb($from_red, $from_green, $from_blue), rgb($to_red, $to_green, $to_blue));
+	background-image: linear-gradient(top, rgb($from_red, $from_green, $from_blue), rgb($to_red, $to_green, $to_blue));
+}
+
+@mixin get_animation($speed : .25s){
+	-webkit-transition: all $speed ease;
+	-moz-transition: all $speed ease;
+	-ms-transition: all $speed ease;
+	-o-transition: all $speed ease;
+	transition: all $speed ease;
+}
+
+
+@mixin rotate_object($degrees : 45deg){
+	-webkit-transform: rotate($degrees);
+	-moz-transform: rotate($degrees);
+	-ms-transform: rotate($degrees);
+	-o-transform: rotate($degrees);
+	transform: rotate($degrees);
+}
+
+@mixin image_scale($value: 1.1){
+	-webkit-transform: scale($value);
+	   -moz-transform: scale($value);
+	    -ms-transform: scale($value);
+	     -o-transform: scale($value);
+	        transform: scale($value);
+}
+
+
+@mixin headings($from: 1, $to: 6){
+    @for $i from $from through $to{
+      h#{$i}{
+        @content
+      }
+    }
+}
+
+@mixin include_heading(){
+	@include headings(){
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		color:$font_color;
+	    font-weight: 400;
+	    margin:5px 0px;
+	    padding:2px;
+	}
+}

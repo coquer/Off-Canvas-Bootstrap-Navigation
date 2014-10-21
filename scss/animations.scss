@@ -1,0 +1,23 @@
+@mixin animation ($speed : 1) {
+	.animated {
+  		-webkit-animation-duration: $speed + 0s;
+         animation-duration: $speed + 0s;
+  		-webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+
+        .infinite {
+		  	-webkit-animation-iteration-count: infinite;
+		    animation-iteration-count: infinite;
+		}
+
+		.hinge {
+		  	-webkit-animation-duration: $speed + 1s;
+		    animation-duration: $speed + 1s;
+		}
+	}
+}
+
+@mixin easyanimation ($speed : 1){
+
+	
+}
