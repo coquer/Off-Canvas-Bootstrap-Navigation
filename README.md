@@ -7,10 +7,18 @@ Simple SASS menu that slides from the side to show the menu options.
 
 Browser  | Support
 ------------- | -------------
-Chrome 38  | True
-Safari 7  | Sort of
-Firefox  | True
-IE < 10  | False
+|Chrome 38  | True |
+|Safari 7  | Sort of |
+|Firefox  | True |
+|IE < 10  | False |
+
+<h1>TODO</h1>
+
+- [ ] Add Smoother Animations
+- [ ] All Browser Support
+- [ ] Intagration with bootstrap
+- [ ] Extension for wordpress
+- [ ] clean
 
 Copyright 2014 Jorge Rodriguez(jycr753)
 
