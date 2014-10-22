@@ -14,7 +14,7 @@ Browser  | Support
 
 <h1>TODO</h1>
 
-- [ ] Add Smoother Animations
+- [x] Add Smoother Animations
 - [ ] All Browser Support
 - [ ] Intagration with bootstrap
 - [ ] Extension for wordpress
