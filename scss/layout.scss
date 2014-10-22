@@ -52,7 +52,8 @@ body {
 	@include get_gradiant();
 	height:50px;
 	width:100%;
-	position:fixed;
+	position:relative;
+	margin-top: 0px;
 
 	h1{
 		font-size: 28px;
@@ -73,7 +74,7 @@ body {
 }
 
 label[for="nav-trigger"]{
-	@include get_animation();
+	@include get_animation(0.1);
 	position:fixed;
 	left:20px;
 	top:11px;
@@ -108,7 +109,7 @@ label[for="nav-trigger"]{
 }
 
 .nav-trigger + label, .site-wrap {
-	transition: left 0.2s;
+	transition: left ease-out 0.3s;
 }
 .nav-trigger:checked + label {
 	left: 215px;

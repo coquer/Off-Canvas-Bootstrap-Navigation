@@ -91,7 +91,7 @@ $default_color : #222222;
 	background-image: linear-gradient(top, rgb($from_red, $from_green, $from_blue), rgb($to_red, $to_green, $to_blue));
 }
 
-@mixin get_animation($speed : .25s){
+@mixin get_animation($speed : .3s){
 	-webkit-transition: all $speed ease;
 	-moz-transition: all $speed ease;
 	-ms-transition: all $speed ease;
