@@ -52,7 +52,7 @@ body {
 	@include get_gradiant();
 	height:50px;
 	width:100%;
-	position:relative;
+	position:fixed;
 	margin-top: 0px;
 
 	h1{

@@ -114,7 +114,7 @@ h6 {
   background-image: linear-gradient(top, #222222, #222222);
   height: 50px;
   width: 100%;
-  position: relative;
+  position: fixed;
   margin-top: 0px; }
   .col-nav-container-1 h1 {
     font-size: 28px;
