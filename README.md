@@ -8,7 +8,7 @@ Simple SASS menu that slides from the side to show the menu options.
 Browser  | Support
 ------------- | -------------
 |Chrome 38  | True |
-|Safari 7  | True |
+|Safari 7  | Sort of |
 |Firefox  | True |
 |IE < 10  | False |
 
