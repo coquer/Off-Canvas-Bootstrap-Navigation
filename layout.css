@@ -1,0 +1,181 @@
+/*
+  Copyright 2014 Jorge Rodriguez(jycr753)
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+*/
+
+body {
+  overflow-x: hidden; }
+
+.navigation {
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  z-index: 0;
+  background-color: #FFFFFF; }
+
+.nav_item {
+  display: block;
+  width: 197px;
+  height: 54px;
+  line-height: 19px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0px -39px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  font-weight: bold; }
+  .nav_item a {
+    font-size: 16px;
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    background-color: #FFFFFF;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+    background-image: -webkit-linear-gradient(top, white, white);
+    background-image: -moz-linear-gradient(top, white, white);
+    background-image: -o-linear-gradient(top, white, white);
+    background-image: -ms-linear-gradient(top, white, white);
+    background-image: linear-gradient(top, white, white);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .nav_item a:hover {
+      color: black;
+      font-weight: 400;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    .nav_item a:active {
+      color: black;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+
+.col-nav-container-1 {
+  background-color: #FFFFFF;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+  background-image: -webkit-linear-gradient(top, white, white);
+  background-image: -moz-linear-gradient(top, white, white);
+  background-image: -o-linear-gradient(top, white, white);
+  background-image: -ms-linear-gradient(top, white, white);
+  background-image: linear-gradient(top, white, white);
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  margin-top: 0px; }
+  .col-nav-container-1 h1 {
+    font-size: 28px;
+    margin-left: 58px;
+    padding: 2px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+    position: absolute;
+    font-family: monospace; }
+
+.nav-trigger {
+  position: absolute;
+  clip: rect(0, 0, 0, 0); }
+
+label[for="nav-trigger"] {
+  position: relative;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  position: fixed;
+  left: 20px;
+  top: 11px;
+  z-index: 20;
+  cursor: pointer; }
+  label[for="nav-trigger"], label[for="nav-trigger"]:before, label[for="nav-trigger"]:after {
+    display: block;
+    width: 30px;
+    height: 6px;
+    background-color: #000000;
+    -webkit-transition-property: background-color, -webkit-transform;
+    -moz-transition-property: background-color, -moz-transform;
+    -o-transition-property: background-color, -o-transform;
+    transition-property: background-color, transform;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+  label[for="nav-trigger"]:before, label[for="nav-trigger"]:after {
+    position: absolute;
+    content: ""; }
+  label[for="nav-trigger"]:before {
+    top: -9px; }
+  label[for="nav-trigger"]:after {
+    top: 9px; }
+
+.navbar-form.navbar-right:last-child {
+  margin-right: 0px; }
+
+.col-site-content {
+  min-height: 700px;
+  min-width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+  background-image: -webkit-linear-gradient(top, white, white);
+  background-image: -moz-linear-gradient(top, white, white);
+  background-image: -o-linear-gradient(top, white, white);
+  background-image: -ms-linear-gradient(top, white, white);
+  background-image: linear-gradient(top, white, white);
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  padding: 0;
+  background-size: 200%; }
+
+.nav-trigger + label, .col-site-content {
+  transition: left ease-out 0.3s; }
+
+.nav-trigger:checked + label {
+  left: 215px; }
+  .nav-trigger:checked + label {
+    background-color: transparent; }
+  .nav-trigger:checked + label:before {
+    -webkit-transform: translateY(9px) rotate(45deg);
+    -moz-transform: translateY(9px) rotate(45deg);
+    -ms-transform: translateY(9px) rotate(45deg);
+    -o-transform: translateY(9px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg); }
+  .nav-trigger:checked + label:after {
+    -webkit-transform: translateY(-9px) rotate(-45deg);
+    -moz-transform: translateY(-9px) rotate(-45deg);
+    -ms-transform: translateY(-9px) rotate(-45deg);
+    -o-transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(-9px) rotate(-45deg); }
+
+.nav-trigger:checked ~ .col-site-content {
+  left: 200px; }
+
+.col-nav-active {
+  border-right: 1px solid rgba(0, 0, 0, 0.5); }
+
+/*# sourceMappingURL=layout.css.map */
