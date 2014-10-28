@@ -41,9 +41,11 @@ Now the HTML:
 
 <h5>Simple SASS/CSS slide Navigation</h5>
 
-![alt tag](https://github.com/jycr753/Sliding-Menu-CSS/assets/white_close.png)
+![alt tag](https://github.com/jycr753/Sliding-Menu-CSS/blob/master/assets/white_close.png)
 ================
-![alt tag](https://github.com/jycr753/Sliding-Menu-CSS/assets/white_open.png)
+![alt tag](https://github.com/jycr753/Sliding-Menu-CSS/blob/master/assets/white_open.png)
+
+
 Browser  | Support
 ------------- | -------------
 |Chrome 38  | True |
