@@ -1,4 +1,4 @@
-Sliding-Menu-CSS
+Off-Canvas-Bootstrap-Navigation
 ================
 <h3>How to use:</h3>
 Add or copy to your style sheet style.css
