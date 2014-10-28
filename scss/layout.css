@@ -1,103 +1,76 @@
+/**
+ * Thanks to Joren -- @jorenvanhee
+ * Great repo https://github.com/jorenvanhee/sass-burger
+ *
+ * 
+ * Burger parts
+ *
+ * (---) top    -> &:before
+ * [---] middle -> &
+ * (---) bottom -> &:after
+ */
+/**
+ * Burger
+ */
+/**
+ * Select parts of the burger
+ */
+/**
+ * Burger animations
+ */
 body {
   overflow-x: hidden; }
 
-h1 {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  color: #ffffff;
-  font-weight: 400;
-  margin: 5px 0px;
-  padding: 2px; }
-
-h2 {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  color: #ffffff;
-  font-weight: 400;
-  margin: 5px 0px;
-  padding: 2px; }
-
-h3 {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  color: #ffffff;
-  font-weight: 400;
-  margin: 5px 0px;
-  padding: 2px; }
-
-h4 {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  color: #ffffff;
-  font-weight: 400;
-  margin: 5px 0px;
-  padding: 2px; }
-
-h5 {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  color: #ffffff;
-  font-weight: 400;
-  margin: 5px 0px;
-  padding: 2px; }
-
-h6 {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  color: #ffffff;
-  font-weight: 400;
-  margin: 5px 0px;
-  padding: 2px; }
-
 .navigation {
-  width: 100%;
+  width: 200px;
   height: 100%;
   position: fixed;
   z-index: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  list-style: none;
-  background: #2B2B2B; }
+  background-color: #FFFFFF; }
 
 .nav_item {
   display: block;
   width: 197px;
   height: 54px;
   line-height: 19px;
-  color: #ffffff;
   text-align: center;
   text-decoration: none;
   font-size: 20px;
   margin: 0px -39px;
   margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   font-weight: bold; }
   .nav_item a {
     font-size: 16px;
     display: block;
     padding: 16px;
-    position: relative;
     text-decoration: none;
-    color: #ffffff;
+    color: rgba(0, 0, 0, 0.6);
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 2px;
-    background-color: #222222;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#222222), to(#222222));
-    background-image: -webkit-linear-gradient(top, #222222, #222222);
-    background-image: -moz-linear-gradient(top, #222222, #222222);
-    background-image: -o-linear-gradient(top, #222222, #222222);
-    background-image: -ms-linear-gradient(top, #222222, #222222);
-    background-image: linear-gradient(top, #222222, #222222);
+    background-color: #FFFFFF;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+    background-image: -webkit-linear-gradient(top, white, white);
+    background-image: -moz-linear-gradient(top, white, white);
+    background-image: -o-linear-gradient(top, white, white);
+    background-image: -ms-linear-gradient(top, white, white);
+    background-image: linear-gradient(top, white, white);
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
     .nav_item a:hover {
-      box-shadow: 0px 0px 1px 8px rgba(43, 43, 43, 0.4);
-      background-color: #404040;
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#404040), to(#404040));
-      background-image: -webkit-linear-gradient(top, #404040, #404040);
-      background-image: -moz-linear-gradient(top, #404040, #404040);
-      background-image: -o-linear-gradient(top, #404040, #404040);
-      background-image: -ms-linear-gradient(top, #404040, #404040);
-      background-image: linear-gradient(top, #404040, #404040);
+      color: black;
+      font-weight: 400;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    .nav_item a:active {
+      color: black;
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
       -ms-transition: all 0.3s ease;
@@ -105,13 +78,13 @@ h6 {
       transition: all 0.3s ease; }
 
 .col-nav-container-1 {
-  background-color: #222222;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#222222), to(#222222));
-  background-image: -webkit-linear-gradient(top, #222222, #222222);
-  background-image: -moz-linear-gradient(top, #222222, #222222);
-  background-image: -o-linear-gradient(top, #222222, #222222);
-  background-image: -ms-linear-gradient(top, #222222, #222222);
-  background-image: linear-gradient(top, #222222, #222222);
+  background-color: #FFFFFF;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+  background-image: -webkit-linear-gradient(top, white, white);
+  background-image: -moz-linear-gradient(top, white, white);
+  background-image: -o-linear-gradient(top, white, white);
+  background-image: -ms-linear-gradient(top, white, white);
+  background-image: linear-gradient(top, white, white);
   height: 50px;
   width: 100%;
   position: fixed;
@@ -132,33 +105,34 @@ h6 {
   clip: rect(0, 0, 0, 0); }
 
 label[for="nav-trigger"] {
-  -webkit-transition: all 0.1 ease;
-  -moz-transition: all 0.1 ease;
-  -ms-transition: all 0.1 ease;
-  -o-transition: all 0.1 ease;
-  transition: all 0.1 ease;
-  position: fixed;
+  position: relative;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  position: relative;
   left: 20px;
   top: 11px;
   z-index: 20;
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
-  background-size: contain;
-  outline: 0; }
-  label[for="nav-trigger"]:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    outline: 0; }
+  cursor: pointer; }
+  label[for="nav-trigger"], label[for="nav-trigger"]:before, label[for="nav-trigger"]:after {
+    display: block;
+    width: 30px;
+    height: 6px;
+    background-color: #000000;
+    -webkit-transition-property: background-color, -webkit-transform;
+    -moz-transition-property: background-color, -moz-transform;
+    -o-transition-property: background-color, -o-transform;
+    transition-property: background-color, transform;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+  label[for="nav-trigger"]:before, label[for="nav-trigger"]:after {
+    position: absolute;
+    content: ""; }
+  label[for="nav-trigger"]:before {
+    top: -9px; }
+  label[for="nav-trigger"]:after {
+    top: 9px; }
 
 .navbar-form.navbar-right:last-child {
   margin-right: 0px; }
@@ -167,15 +141,15 @@ label[for="nav-trigger"] {
   min-height: 700px;
   min-width: 100%;
   height: 100%;
-  background-color: #2B2B2B;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#2b2b2b), to(#2b2b2b));
-  background-image: -webkit-linear-gradient(top, #2b2b2b, #2b2b2b);
-  background-image: -moz-linear-gradient(top, #2b2b2b, #2b2b2b);
-  background-image: -o-linear-gradient(top, #2b2b2b, #2b2b2b);
-  background-image: -ms-linear-gradient(top, #2b2b2b, #2b2b2b);
-  background-image: linear-gradient(top, #2b2b2b, #2b2b2b);
+  background-color: #FFFFFF;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+  background-image: -webkit-linear-gradient(top, white, white);
+  background-image: -moz-linear-gradient(top, white, white);
+  background-image: -o-linear-gradient(top, white, white);
+  background-image: -ms-linear-gradient(top, white, white);
+  background-image: linear-gradient(top, white, white);
   position: relative;
-  top: 0;
+  top: -38px;
   bottom: 100%;
   left: 0;
   z-index: 1;
@@ -187,9 +161,25 @@ label[for="nav-trigger"] {
 
 .nav-trigger:checked + label {
   left: 215px; }
+  .nav-trigger:checked + label {
+    background-color: transparent; }
+  .nav-trigger:checked + label:before {
+    -webkit-transform: translateY(9px) rotate(45deg);
+    -moz-transform: translateY(9px) rotate(45deg);
+    -ms-transform: translateY(9px) rotate(45deg);
+    -o-transform: translateY(9px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg); }
+  .nav-trigger:checked + label:after {
+    -webkit-transform: translateY(-9px) rotate(-45deg);
+    -moz-transform: translateY(-9px) rotate(-45deg);
+    -ms-transform: translateY(-9px) rotate(-45deg);
+    -o-transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(-9px) rotate(-45deg); }
 
 .nav-trigger:checked ~ .site-wrap {
-  left: 200px;
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5); }
+  left: 200px; }
+
+.col-nav-active {
+  border-right: 1px solid rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=layout.css.map */

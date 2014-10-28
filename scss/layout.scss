@@ -3,16 +3,12 @@
 body {
 	overflow-x: hidden;
 }
-
-@include include_heading();
-
 .navigation {
-	width: 100%;
+	width: 200px;;
 	height : 100%;
 	position: fixed;
 	z-index: 0;
-	@include total_position;
-	@include list_style;
+	background-color: #FFFFFF;
 }
 .nav_item {
 
@@ -20,36 +16,41 @@ body {
 	width: 197px;
 	height: 54px;
 	line-height: 19px;
-	color:$font_color;
+	// color:$font_color;
 	text-align: center;
 	text-decoration: none;
 	font-size: 20px;
 	margin: 0px -39px;
 	margin-bottom: 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 	font-weight: bold;
 	a{
 		font-size: 16px;
 		display:block;
 		padding:16px;
-		position:relative;
 		text-decoration: none;
-		color:$font_color;
+		color:rgba(0,0,0,0.6);
 		text-transform: uppercase;
-		font-weight: 100;
+		font-weight: 300;
 		letter-spacing: 2px;
 
-		@include get_gradiant();
+		@include get_gradiant(#FFFFFF,#FFFFFF);
 		@include get_animation();
 
 		&:hover{
-			box-shadow: 0px 0px 1px 8px rgba($bgk_color, 0.4);
-			@include get_gradiant(#404040,#404040);
+			color:rgba(0,0,0,1);
+			font-weight: 400;
 			@include get_animation();
+			
+		}
+		&:active {
+			color:rgba(0,0,0,1);
+			@include get_animation();	
 		}
 	}
 }	
 .col-nav-container-1 {
-	@include get_gradiant();
+	@include get_gradiant(#FFFFFF,#FFFFFF);
 	height:50px;
 	width:100%;
 	position:fixed;
@@ -74,23 +75,14 @@ body {
 }
 
 label[for="nav-trigger"]{
-	@include get_animation(0.1);
-	position:fixed;
+	@include burger(30px, 6px, 3px, #000000);
+	position: relative;;
 	left:20px;
 	top:11px;
 	z-index: 20;
-	height:30px;
-	width:30px;
 	cursor:pointer;
-	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
-    background-size: contain;
-    outline: 0;
-    &:hover{
-    	@include image_scale();
-    	@include get_animation();
-    	outline:0;
-    }
 } 
+
 .navbar-form.navbar-right:last-child {
 	margin-right: 0px;
 }
@@ -98,9 +90,10 @@ label[for="nav-trigger"]{
 	min-height: 700px;
 	min-width: 100%;
 	height:100%;
-	@include get_gradiant(#2B2B2B, #2B2B2B);
+	@include get_gradiant(#FFFFFF, #FFFFFF);
 	position: relative;
-	top: 0;
+	top: -38px;
+	// top: 0;
 	bottom: 100%;
 	left: 0;
 	z-index: 1;
@@ -113,9 +106,12 @@ label[for="nav-trigger"]{
 }
 .nav-trigger:checked + label {
 	left: 215px;
+	@include burger-to-cross;
 }
 
 .nav-trigger:checked ~ .site-wrap {
   left: 200px;
-  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+.col-nav-active {
+	border-right:  1px solid rgba(0, 0, 0, 0.5);
 }
