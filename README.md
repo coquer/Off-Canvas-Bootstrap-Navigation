@@ -1,5 +1,8 @@
 Sliding-Menu-CSS
 ================
+<h1>How to use:</h1>
+Download JS- <a href="https://raw.githubusercontent.com/jycr753/Sliding-Menu-CSS/master/js/app.js">File</a>
+
 
 Simple SASS menu that slides from the side to show the menu options.
 
