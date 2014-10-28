@@ -1,24 +1,61 @@
 Sliding-Menu-CSS
 ================
-<h1>How to use:</h1>
-Coming Soon.... :)
+<h3>How to use:</h3>
+Add or copy to your style sheet style.css
+```html
+<link rel="stylesheet" type="text/css" href="path/to/file/layout.css">
+```
 
-Simple SASS menu that slides from the side to show the menu options.
+also include app.js or just copy paste this small snippet.
 
-![alt tag](https://github.com/jycr753/Sliding-Menu-CSS/blob/master/image_white.png)
+```javascript
+   document.addEventListener('DOMContentLoaded', function(){
+	var nav_trigger = document.getElementById("nav-trigger");
+	nav_trigger.addEventListener("click", function(){
+		var col_nav = document.getElementById("col-nav"),
+		active_class = "col-nav-active";
+		if (nav_trigger.checked){
+			col_nav.classList.add(active_class);
+		}else{
+			col_nav.classList.remove(active_class);
+		}
+	});
+});
+```
 
+This part does has not depencies, but for the design it will work a lot better if you have [http://getbootstrap.com/](bootstrap) and jQuery.
+
+Now the HTML:
+
+```html
+<ul class="navigation" id="col-nav">
+	<li class="nav_item"><a href="#">...</a></li>
+	.....
+ </ul>
+ <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+ <label for="nav-trigger"></label>	
+ <div class="col-site-content">
+	 <!-- You content here -->
+ </div>
+```
+
+<h5>Simple SASS/CSS slide Navigation</h5>
+
+![alt tag](https://github.com/jycr753/Sliding-Menu-CSS/assets/white_close.png)
+================
+![alt tag](https://github.com/jycr753/Sliding-Menu-CSS/assets/white_open.png)
 Browser  | Support
 ------------- | -------------
 |Chrome 38  | True |
-|Safari 7  | Sort of |
+|Safari 7  | True |
 |Firefox  | True |
 |IE < 10  | False |
 
-<h1>TODO</h1>
+<h3>TODO</h3>
 
 - [x] Add Smoother Animations
-- [ ] All Browser Support
-- [ ] Intagration with bootstrap
+- [x] All Browser Support
+- [x] Intagration with bootstrap
 - [ ] Extension for wordpress
 - [ ] clean
 
