@@ -21,8 +21,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	});
 });
 ```
-
-This part does has not depencies, but for the design it will work a lot better if you have [bootstrap](http://getbootstrap.com/) and jQuery.
+This part do not have decencies since is vanilla javascript, but for the design it will work a lot better if you have [bootstrap](http://getbootstrap.com/) and jQuery to make it easy to expand.
 
 HTML:
 
