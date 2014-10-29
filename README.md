@@ -1,15 +1,18 @@
 Off-Canvas-Bootstrap-Navigation
 ================
-<h3>How to use:</h3>
-Add or copy to your style sheet style.css
+How to use:
+------------
+Add or copy the style.css content or link to the file from your html.
+-->[CSS File](https://github.com/jycr753/Off-Canvas-Bootstrap-Navigation/blob/master/layout.css)
+
 ```html
 <link rel="stylesheet" type="text/css" href="path/to/file/layout.css">
 ```
 
-also include app.js or just copy paste this small snippet.
+You also need to include [https://github.com/jycr753/Off-Canvas-Bootstrap-Navigation/blob/master/js/app.js](app.js) or just copy paste this small snippet.
 
 ```javascript
-   document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function(){
 	var nav_trigger = document.getElementById("nav-trigger");
 	nav_trigger.addEventListener("click", function(){
 		var col_nav = document.getElementById("col-nav"),
@@ -23,7 +26,7 @@ also include app.js or just copy paste this small snippet.
 });
 ```
 
-This part does has not depencies, but for the design it will work a lot better if you have [http://getbootstrap.com/](bootstrap) and jQuery.
+This part does has not depencies, but for the design it will work a lot better if you have [bootstrap](http://getbootstrap.com/) and jQuery.
 
 Now the HTML:
 
@@ -35,16 +38,20 @@ Now the HTML:
  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
  <label for="nav-trigger"></label>	
  <div class="col-site-content">
-	 <!-- You content here -->
+	 <!-- Your content here -->
  </div>
 ```
 
-<h5>Simple SASS/CSS slide Navigation</h5>
+Off Canvas Navigation Samples
+------------
 
 ![alt tag](https://github.com/jycr753/Sliding-Menu-CSS/blob/master/assets/white_close.png)
 ================
 ![alt tag](https://github.com/jycr753/Sliding-Menu-CSS/blob/master/assets/white_open.png)
 
+
+Support
+------------
 
 Browser  | Support
 ------------- | -------------
@@ -53,7 +60,9 @@ Browser  | Support
 |Firefox  | True |
 |IE < 10  | False |
 
-<h3>TODO</h3>
+
+TODO
+------------
 
 - [x] Add Smoother Animations
 - [x] All Browser Support
@@ -61,16 +70,20 @@ Browser  | Support
 - [ ] Extension for wordpress
 - [ ] clean
 
-Copyright 2014 Jorge Rodriguez(jycr753)
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+License
+-------
 
-   http://www.apache.org/licenses/LICENSE-2.0
+	Copyright 2014 Jorge Rodriguez(jycr753)
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+	   http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
