@@ -9,7 +9,7 @@ Add or copy the style.css content or link to the file from your html.
 <link rel="stylesheet" type="text/css" href="path/to/file/layout.css">
 ```
 
-You also need to include [https://github.com/jycr753/Off-Canvas-Bootstrap-Navigation/blob/master/js/app.js](app.js) or just copy paste this small snippet.
+You also need to include [app.js](https://github.com/jycr753/Off-Canvas-Bootstrap-Navigation/blob/master/js/app.js) or just copy paste this small snippet.
 
 ```javascript
 document.addEventListener('DOMContentLoaded', function(){
