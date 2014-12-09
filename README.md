@@ -9,7 +9,7 @@ Add or copy the style.css content or link to the file from your html.
 <link rel="stylesheet" type="text/css" href="path/to/file/layout.css">
 ```
 
-You also need to include [app.js](https://github.com/jycr753/Off-Canvas-Bootstrap-Navigation/blob/master/js/app.js) or just copy paste this small snippet.
+You will also need to include this file [app.js](https://github.com/jycr753/Off-Canvas-Bootstrap-Navigation/blob/master/js/app.js) or just include this snippet to your main JavaScript file.
 
 ```javascript
 document.addEventListener('DOMContentLoaded', function(){
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	});
 });
 ```
-This part do not have decencies since is vanilla javascript, but for the design it will work a lot better if you have [bootstrap](http://getbootstrap.com/) and jQuery to make it easy to expand.
+Since this part is made in vanilla JavaScript it has not depencies such as jQuery, Backbone, or any other library out there. But since is made to work with bootstrap dont forget to add [bootstrap](http://getbootstrap.com/) files. 
 
 HTML:
 
@@ -53,7 +53,7 @@ Browser  | Support
 |Chrome 38  | True |
 |Safari 7  | True |
 |Firefox  | True |
-|IE < 10  | False |
+|IE < 9  | False |
 
 
 TODO
